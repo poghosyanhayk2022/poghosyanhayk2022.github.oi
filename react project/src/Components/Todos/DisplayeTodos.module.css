@@ -1,0 +1,79 @@
+.DisplayTodosRoot{
+    display: flex;
+    width: 88%;
+    height: 90vh;
+    float: right;
+    color: rgb(45, 44, 43);
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    color: black;
+    margin: 50px auto;
+}
+.displayTodos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button button{
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.button button:focus{
+    outline: none;
+}
+.button button:not(:last-child){
+    margin-right: 1rem;
+}
+.displayTodos ul{
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+
+@media (max-width: 1024px) {
+    .DisplayTodosRoot {
+        width: 100%;
+    }
+
+    .displayTodos ul {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .DisplayTodosRoot {
+        padding: 10px;
+    }
+
+    .conteiner {
+        margin: 30px auto;
+    }
+
+    .button button {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .DisplayTodosRoot {
+        padding: 5px;
+    }
+
+    .conteiner {
+        margin: 20px auto;
+    }
+
+    .button button {
+        margin-bottom: 0.5rem;
+        padding: 0.3rem 0.8rem;
+    }
+}

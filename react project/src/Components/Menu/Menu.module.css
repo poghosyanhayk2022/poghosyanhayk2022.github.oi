@@ -1,0 +1,59 @@
+.MenuRot{
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 12%;
+    height: 80vh;
+    background-color: #332b2b;
+    padding: 0;
+    margin: 0;
+   
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu a {
+    padding: 10px 10px 10px 26px;
+    border-radius: 0;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    .MenuRot {
+        width: 100%;
+        height: auto;
+        top: 25;
+        left: 0;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .menu a {
+       top: 0;
+    }
+}
+
+@media (max-width: 483px) {
+    .menu a {
+        top: 0;
+        margin: 0;
+        font-size:14px ;
+     }
+}
+@media (max-width: 320px) {
+    .menu a {
+        top: 0;
+        margin: 0;
+        font-size:8px ;
+     }
+}
